@@ -1,0 +1,24 @@
+//crear proyecto con Cordova
+cordova create "Nombre-proyecto"
+
+//agregar plataforma al proyecto (android, ios, etc)
+cordova platform add "nombre-de-la-plataforma"
+
+//convertir la app en APK
+cordova build "nombre-de-la-plataforma"
+
+//convertir en apk con release para la firma
+cordova buidl "nombre-de-la-plataforma" --release
+
+//crear firma											  tamaño en bits			   duracion de la validacion 
+keytool -genkey -v -keystore "nombre-proyecto"-key.keystore -alias "nombre-de-alias" -keyalg RSA -keysize 2048 (este numero puede variar) -validity 10000 (este otro también)
+
+//asignar firma al proyecto									Nombre-del-apk-release
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore "nombre-proyecto"-key.keystore app-release.aab "nombre-de-alias"
+
+//convertir el release firmado en apk
+	      Nombre-del-release~nombre-nuevo-de-apk
+zipalign -v 4 app-release.aab nuevoapk.apk
+
+//añadir plugin
+cordova plugin add "nombre-del-plugin"
