@@ -23,8 +23,7 @@ var app = {
 };
 
 function tomarFoto(){
-    navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-        destinationType: Camera.DestinationType.FILE_URI, saveToPhotoAlbum: true });
+    navigator.camera.getPicture(onSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI, saveToPhotoAlbum: true });
 }
 
 function acabarFoto(contenido){
