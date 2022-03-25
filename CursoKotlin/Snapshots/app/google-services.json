@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1064597291555",
+    "project_id": "snapshots-2f1c7",
+    "storage_bucket": "snapshots-2f1c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064597291555:android:d3f38d2c438298c914e796",
+        "android_client_info": {
+          "package_name": "com.frankcinatra.snapshots"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064597291555-37n2uarro2hifo4108ods9e2uk1ep236.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFWtRx21dRrjuICPT-MfQWFx1UlL_tLUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064597291555-37n2uarro2hifo4108ods9e2uk1ep236.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
