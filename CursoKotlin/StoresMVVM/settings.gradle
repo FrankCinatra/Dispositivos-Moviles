@@ -13,5 +13,5 @@ dependencyResolutionManagement {
         jcenter()
     }
 }
-rootProject.name = "Stores"
+rootProject.name = "StoresMVVM"
 include ':app'
